@@ -1,0 +1,94 @@
+.new-place{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    gap: 3.75rem;
+    max-width: 56.25rem;
+    margin-inline: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    padding-inline: 2rem;
+}
+
+.new-place form{
+    padding-left: 2.5rem;
+}
+
+.new-place input, textarea{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem 0.7rem;
+    display: block;
+}
+ 
+textarea {
+    height: 9rem;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.new-place label{
+    display: block;
+    width: 10rem;
+    padding: 0.5rem 0.2rem 0.2rem;
+}
+
+.new-place button{
+    height: 2.5rem;
+    width: 10rem;
+    border: none;
+    margin-top: 1.4rem;
+    background-color: var(--primary);
+    color: white;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.6rem;
+}
+
+.new-place button:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.075,1.075);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    background-color: var(--tertiary-varient);
+    color: var(--primary);
+    transition: all 0.5s ease-in-out;
+}
+
+.new-place .error{
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 20rem;
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 56.25em) {
+
+    .new-place{
+        grid-template-columns: 1fr;
+        width: 20rem;
+        margin-top: 2.5rem;
+    }
+
+    .new-place form{
+        padding-left: 0;
+    }
+
+    .new-place form .mobile-button{
+        margin-inline: auto;
+        width: 10rem;
+    }
+
+    .new-place .bal-img{
+        display: none;
+    }
+}

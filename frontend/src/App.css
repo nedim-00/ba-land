@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #013237;
+  --secondary: #4CA771;
+  --tertiary: #C0E6BA;
+  --tertiary-varient: #EAF9E7;
+}
+
+
+body{
+  background-color: var(--tertiary-varient);
+  font-family: 'Poppins', sans-serif;
+}
