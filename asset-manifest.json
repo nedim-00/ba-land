@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ba-land/static/css/main.3502cbda.css",
-    "main.js": "/ba-land/static/js/main.504b754a.js",
+    "main.js": "/ba-land/static/js/main.079b975d.js",
     "static/media/menu.png": "/ba-land/static/media/menu.00c58b0073c25117ce9b.png",
     "static/media/balimg.png": "/ba-land/static/media/balimg.d9753730b992538c983a.png",
     "static/media/logo.png": "/ba-land/static/media/logo.7718231d847e8a1f2774.png",
     "index.html": "/ba-land/index.html",
     "main.3502cbda.css.map": "/ba-land/static/css/main.3502cbda.css.map",
-    "main.504b754a.js.map": "/ba-land/static/js/main.504b754a.js.map"
+    "main.079b975d.js.map": "/ba-land/static/js/main.079b975d.js.map"
   },
   "entrypoints": [
     "static/css/main.3502cbda.css",
-    "static/js/main.504b754a.js"
+    "static/js/main.079b975d.js"
   ]
 }
