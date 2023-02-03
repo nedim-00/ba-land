@@ -1,0 +1,78 @@
+.home-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    gap: 4rem;
+    max-width: 56.25rem;
+    margin-inline: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+}
+
+.home-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-info a{
+    align-self: center;
+}
+
+.home-info button{
+    width: 14rem;
+    margin-top: 2rem;
+    border: none;
+    background-color: var(--primary);
+    color: var(--tertiary-varient);
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.6rem;
+}
+
+.home-info button:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.075,1.075);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    background-color: var(--tertiary-varient);
+    color: var(--primary);
+    transition: all 0.5s ease-in-out;
+}
+
+.home-info > h2{
+    font-weight: 500;
+    font-size: 1.84rem;
+    text-align: center;
+}
+
+.bal-img > img{
+    width: 30rem;
+}
+
+@media screen and (max-width: 56.25em) {
+    .home-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        justify-content: center;
+        margin-inline: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .bal-img{
+        justify-self: center;
+        order: 1;
+    }
+
+    .home-info{
+        order: 2;
+    }
+
+    .bal-img > img{
+        width: 20rem;
+    }
+}

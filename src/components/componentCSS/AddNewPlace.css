@@ -1,0 +1,126 @@
+.new-place {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 3.75rem;
+  max-width: 56.25rem;
+  margin-inline: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+
+.new-place form {
+  padding-left: 2.5rem;
+}
+
+.new-place input,
+textarea {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  display: block;
+}
+
+textarea {
+  height: 9rem;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.new-place label {
+  display: block;
+  width: 10rem;
+  padding: 0.5rem 0.2rem 0.2rem;
+}
+
+button {
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  letter-spacing: 0.1rem;
+  border-radius: 0.6rem;
+  font-weight: 500;
+}
+
+.new-place .submit-button {
+  width: 10rem;
+  margin-top: 1.4rem;
+  height: 3rem;
+  font-size: 1.4rem;
+}
+
+.new-place .submit-button:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.075, 1.075);
+  cursor: pointer;
+  border: 2px solid var(--primary);
+  background-color: var(--tertiary-varient);
+  color: var(--primary);
+  transition: all 0.5s ease-in-out;
+}
+
+.new-place .error {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(191, 191, 191, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-place .error .error-container {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 1rem;
+  padding-inline: 1rem;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-place .error .error-container .error-title {
+  font-size: 1.7rem;
+}
+
+.new-place .error .error-container .close-error {
+  width: 10rem;
+  margin-top: 0.7rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.new-place .error .error-container .close-error:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 56.25em) {
+  .new-place {
+    grid-template-columns: 1fr;
+    width: 20rem;
+    margin-top: 2.5rem;
+  }
+
+  .new-place form {
+    padding-left: 0;
+  }
+
+  .new-place form .mobile-button {
+    margin-inline: auto;
+    width: 10rem;
+  }
+
+  .new-place .bal-img {
+    display: none;
+  }
+}
